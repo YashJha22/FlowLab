@@ -176,9 +176,9 @@ The project prioritizes clear architecture, explicit dependencies, predictable s
 
 ## Development Status
 
-**In Development**
+**Active Development**
 
-The project is being developed incrementally, with each major architectural component introduced and integrated into the application.
+The project is being developed incrementally with Jetpack Compose UI components and architecture layers.
 
 ---
 
