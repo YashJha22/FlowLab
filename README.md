@@ -91,13 +91,12 @@ UI events travel down the stack. State travels back up as a stream.
 
 ```text
 app/
-├── data/
-│   └── repository/     # Repository implementations
+├── counter/
+│   ├── CounterScreen.kt    # Compose UI for the counter feature
+│   └── CounterViewModel.kt # ViewModel managing counter state
 ├── ui/
-│   ├── screen/         # Compose screens
-│   ├── component/      # Reusable composables
-│   └── theme/          # Material theme, colors, typography
-└── viewmodel/          # ViewModels and UiState definitions
+│   └── theme/             # Material theme, colors, typography
+└── MainActivity.kt        # Application entry point
 ```
 
 ---
@@ -178,7 +177,11 @@ The project prioritizes clear architecture, explicit dependencies, predictable s
 
 **Active Development**
 
-The project is being developed incrementally with Jetpack Compose UI components and architecture layers.
+- [x] Base project setup with Jetpack Compose & Material 3
+- [x] Extracted `CounterScreen` composable (`com.flowlab.counter`)
+- [x] Added `CounterViewModel` for counter state management
+- [ ] Connect `CounterViewModel` state to `CounterScreen`
+- [ ] Repository and Data Source integration
 
 ---
 
