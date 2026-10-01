@@ -179,8 +179,8 @@ The project prioritizes clear architecture, explicit dependencies, predictable s
 
 - [x] Base project setup with Jetpack Compose & Material 3
 - [x] Extracted `CounterScreen` composable (`com.flowlab.counter`)
-- [x] Added `CounterViewModel` for counter state management (`mutableStateOf`)
-- [x] Connected `CounterViewModel` state and actions to `CounterScreen`
+- [x] Added `CounterViewModel` with reactive state management (`StateFlow`)
+- [x] Connected `CounterViewModel` state (`collectAsState`) and actions to `CounterScreen`
 - [ ] Repository and Data Source integration
 
 ---
