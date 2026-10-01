@@ -92,11 +92,12 @@ UI events travel down the stack. State travels back up as a stream.
 ```text
 app/
 ├── counter/
-│   ├── CounterScreen.kt    # Compose UI for the counter feature
-│   └── CounterViewModel.kt # ViewModel managing counter state
+│   ├── CounterRepository.kt # Repository abstraction for counter data
+│   ├── CounterScreen.kt     # Compose UI for the counter feature
+│   └── CounterViewModel.kt  # ViewModel managing counter state
 ├── ui/
-│   └── theme/             # Material theme, colors, typography
-└── MainActivity.kt        # Application entry point
+│   └── theme/              # Material theme, colors, typography
+└── MainActivity.kt         # Application entry point
 ```
 
 ---
@@ -181,7 +182,8 @@ The project prioritizes clear architecture, explicit dependencies, predictable s
 - [x] Extracted `CounterScreen` composable (`com.flowlab.counter`)
 - [x] Added `CounterViewModel` with reactive state management (`StateFlow`)
 - [x] Connected `CounterViewModel` state (`collectAsState`) and actions to `CounterScreen`
-- [ ] Repository and Data Source integration
+- [x] Integrated `CounterRepository` for data access abstraction
+- [ ] Remote / Local Data Source integration
 
 ---
 
