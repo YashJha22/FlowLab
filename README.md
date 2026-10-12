@@ -8,6 +8,12 @@ The project demonstrates how Jetpack Compose, ViewModel, StateFlow, Repository, 
 
 ---
 
+## Project Status: Completed
+
+FlowLab's planned architecture exercises are complete. The implemented unit tests have been run and verified, and the concepts learned will now be applied to Mnemo.
+
+---
+
 ## Overview
 
 FlowLab follows a layered architecture where each component has a defined responsibility and data flows in one direction.
@@ -132,13 +138,10 @@ Tracing a single user action through the layers:
 
 ## Testing Strategy
 
-Testing will be introduced alongside the architecture as the project develops.
+The implemented Repository unit tests have been run and verified. Additional ViewModel or Compose UI tests may be added if needed.
 
-- **ViewModel** — Unit tests for state and UI behavior.
-- **Repository** — Unit tests using controlled data sources.
-- **Compose UI** — UI tests for screen behavior.
-
-Testing tools and libraries will be added as required.
+- **Repository** — Unit tests covering repository initialization and counter state increments.
+- **ViewModel & UI** — Additional tests may be added if required.
 
 ---
 
